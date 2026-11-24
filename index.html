@@ -21,6 +21,7 @@
         <span class="brand-name">Raúl Muñoz López</span>
       </a>
       <nav class="site-nav" aria-label="Main navigation">
+        <a href="#about">About</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
         <a href="https://github.com/RaulMunozz" target="_blank" rel="noopener noreferrer">GitHub</a>
@@ -33,9 +34,10 @@
       <div class="hero-copy">
         <p class="eyebrow"><span class="eyebrow-dot"></span> Computer Science · Data Analytics</p>
         <h1 id="hero-title">Building things<br>that work <em>well.</em></h1>
-        <p class="lede">Computer science student at Alma College. I like turning ideas into clean, useful software — from games and web apps to data analysis.</p>
+        <p class="lede">BSc Computer Science student with a Data Analytics minor at Alma College. I build games, web apps and data tools in C++, Python and Java — and I'm looking for a junior role in Spain or Europe.</p>
         <div class="hero-actions">
           <a class="btn btn-primary" href="#projects">View projects <span aria-hidden="true">↓</span></a>
+          <a class="btn btn-ghost" href="CV.pdf">Download CV <span aria-hidden="true">↓</span></a>
           <a class="btn btn-ghost" href="mailto:munozzraul30@gmail.com">Get in touch</a>
         </div>
         <ul class="hero-meta" aria-label="Quick information">
@@ -55,6 +57,20 @@
       </div>
     </section>
 
+    <section id="about" class="about-section wrap" aria-labelledby="about-title">
+      <div class="about-copy">
+        <p class="eyebrow">About</p>
+        <h2 id="about-title">Computer science student,<br>building across the stack.</h2>
+        <p>BSc Computer Science with a minor in Data Analytics at Alma College (USA), expected April 2027. I work in C++, Python and Java — from 3D games and command-line tools to Flask apps and data analysis. Dean's List student, open to junior technology roles in Spain and Europe.</p>
+      </div>
+      <dl class="about-facts">
+        <div><dt>Degree</dt><dd>BSc Computer Science · Data Analytics</dd></div>
+        <div><dt>Graduation</dt><dd>April 2027 (expected)</dd></div>
+        <div><dt>Focus</dt><dd>C++ · Python · Java · Flask · Spring Boot</dd></div>
+        <div><dt>Based in</dt><dd>Spain · open to Spain &amp; Europe</dd></div>
+      </dl>
+    </section>
+
     <section id="projects" class="projects-section wrap" aria-labelledby="projects-title">
       <div class="section-heading">
         <div>
@@ -68,7 +84,7 @@
         <article class="card">
           <div class="card-head"><span class="card-index">01</span><span class="card-tag">CSC-335</span></div>
           <h3>Asteroid Destroyer</h3>
-          <p>3D game made with openFrameworks. It has spaceship controls, missiles, asteroid collisions, four camera views, textures and sound.</p>
+          <p>3D game made with openFrameworks: spaceship controls, missiles, collisions, four camera views, textures and sound. Sources are consistency-checked in CI.</p>
           <ul class="tech"><li>C++</li><li>openFrameworks</li><li>CMake</li></ul>
           <a class="card-link" href="https://github.com/RaulMunozz/asteroid-destroyer" target="_blank" rel="noopener noreferrer">View code <span aria-hidden="true">↗</span></a>
         </article>
@@ -76,7 +92,7 @@
         <article class="card">
           <div class="card-head"><span class="card-index">02</span><span class="card-tag">2025</span></div>
           <h3>Autoescuela</h3>
-          <p>Flask app for collecting driving school students' availability and reviewing it as an admin. Data is stored in SQLite and the app is deployed on Render.</p>
+          <p>Flask app for collecting driving-school availability with validated, CSRF-protected forms, role-based views and SQLite storage. Deployed on Render with security tests in CI.</p>
           <ul class="tech"><li>Python</li><li>Flask</li><li>SQLAlchemy</li><li>SQLite</li></ul>
           <a class="card-link" href="https://github.com/RaulMunozz/autoescuela-demo" target="_blank" rel="noopener noreferrer">View code <span aria-hidden="true">↗</span></a>
         </article>
@@ -84,7 +100,7 @@
         <article class="card">
           <div class="card-head"><span class="card-index">03</span><span class="card-tag">CSC-335</span></div>
           <h3>Ray Tracer</h3>
-          <p>Ray tracer in C++ with spheres, materials and textures. It renders an animated scene to image frames, which are then converted to video with ffmpeg.</p>
+          <p>Ray tracer in C++ with spheres, materials and textures. It renders an animated scene to image frames, converted to video with ffmpeg; compiled in CI.</p>
           <ul class="tech"><li>C++</li><li>CMake</li><li>ffmpeg</li></ul>
           <p class="note">Based on Peter Shirley's <em>Ray Tracing in One Weekend</em>. The animation and scene changes are mine.</p>
           <a class="card-link" href="https://github.com/RaulMunozz/ray-tracer-cpp" target="_blank" rel="noopener noreferrer">View code <span aria-hidden="true">↗</span></a>
@@ -93,7 +109,7 @@
         <article class="card">
           <div class="card-head"><span class="card-index">04</span><span class="card-tag">2025</span></div>
           <h3>Booking System</h3>
-          <p>Flask app for making reservations with form validation, 15-minute time slots and an admin page listing all bookings. Deployed on Render.</p>
+          <p>Flask reservation app with validated forms, 15-minute time slots and an admin page listing all bookings. Deployed on Render with security tests in CI.</p>
           <ul class="tech"><li>Python</li><li>Flask</li><li>SQLite</li><li>Bootstrap</li></ul>
           <a class="card-link" href="https://github.com/RaulMunozz/flask-reservas" target="_blank" rel="noopener noreferrer">View code <span aria-hidden="true">↗</span></a>
         </article>
@@ -101,7 +117,7 @@
         <article class="card">
           <div class="card-head"><span class="card-index">05</span><span class="card-tag">DAT 115</span></div>
           <h3>Student Performance Analysis</h3>
-          <p>R scripts for the DAT 115 final project: regression, decision trees and k-means clustering on student performance data.</p>
+          <p>R scripts for the DAT 115 final project: regression, decision trees and k-means clustering on student performance data; parse-checked in CI.</p>
           <ul class="tech"><li>R</li><li>ggplot2</li><li>C5.0</li></ul>
           <a class="card-link" href="https://github.com/RaulMunozz/student-performance-analysis" target="_blank" rel="noopener noreferrer">View code <span aria-hidden="true">↗</span></a>
         </article>
@@ -109,7 +125,7 @@
         <article class="card">
           <div class="card-head"><span class="card-index">06</span><span class="card-tag">2025</span></div>
           <h3>Employee Task Manager</h3>
-          <p>Spring Boot command-line app for managing employees and tasks, using JPA, an H2 database and separate service and repository layers.</p>
+          <p>Spring Boot command-line app for employees and tasks with JPA, H2 and separate service/repository layers. Unit tests and Maven CI included.</p>
           <ul class="tech"><li>Java</li><li>Spring Boot</li><li>JPA</li><li>H2</li></ul>
           <a class="card-link" href="https://github.com/RaulMunozz/employee-task-manager" target="_blank" rel="noopener noreferrer">View code <span aria-hidden="true">↗</span></a>
         </article>
@@ -124,6 +140,7 @@
           <p>Open to junior technology roles in Spain and Europe.</p>
         </div>
         <div class="contact-actions">
+          <a class="btn btn-light" href="CV.pdf">Download CV <span aria-hidden="true">↓</span></a>
           <a class="btn btn-light" href="mailto:munozzraul30@gmail.com">munozzraul30@gmail.com</a>
           <a class="btn btn-outline-light" href="https://github.com/RaulMunozz" target="_blank" rel="noopener noreferrer">github.com/RaulMunozz <span aria-hidden="true">↗</span></a>
         </div>

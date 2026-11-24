@@ -15,9 +15,13 @@ Then open `http://localhost:8000`.
 
 ## Edit it
 
-- `index.html` — all text and links.
+- `index.html` — all text and links (served at the site root).
+- `portfolio/index.html` — the same page served at `/portfolio/`, with relative asset paths.
+- `CV.pdf` — the downloadable CV linked from the hero and contact section.
 - `styles.css` — layout and colours.
 - `script.js` — only sets the footer year.
+
+Keep `index.html` and `portfolio/index.html` in sync when editing copy; only their asset/CV paths differ.
 
 ## Project links
 

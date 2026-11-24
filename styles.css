@@ -282,6 +282,56 @@ a:hover { text-decoration: none; }
   white-space: nowrap;
 }
 
+/* About */
+
+.about-section {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(260px, 0.8fr);
+  gap: 48px;
+  align-items: start;
+  padding: 34px 0 72px;
+  border-top: 1px solid var(--line);
+}
+.about-copy h2 {
+  margin: 0 0 16px;
+  font-family: var(--serif);
+  font-size: clamp(1.9rem, 3.4vw, 2.6rem);
+  font-weight: 500;
+  line-height: 1.12;
+  letter-spacing: -0.03em;
+}
+.about-copy > p:last-child {
+  max-width: 62ch;
+  margin: 0;
+  color: #44536a;
+}
+.about-facts {
+  margin: 0;
+  padding: 22px 24px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+.about-facts > div + div {
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 1px solid var(--line);
+}
+.about-facts dt {
+  color: var(--muted);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+.about-facts dd {
+  margin: 3px 0 0;
+  color: var(--ink);
+  font-size: 0.92rem;
+  font-weight: 600;
+}
+
 /* Projects */
 
 .projects-section { padding: 26px 0 84px; }
@@ -455,6 +505,7 @@ a:hover { text-decoration: none; }
   .orb-front { width: 160px; height: 160px; }
   .hero-badge { width: 175px; padding: 22px; }
   .hero-badge-number { font-size: 3.2rem; }
+  .about-section { grid-template-columns: 1fr; gap: 24px; padding: 28px 0 56px; }
   .contact-card { grid-template-columns: 1fr; padding: 38px; }
 }
 
