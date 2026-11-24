@@ -62,7 +62,7 @@ None. The site does not require environment variables, secrets or API keys.
 
 ## Secure deployment
 
-1. Keep only the published files in the GitHub Pages branch: `index.html`, `styles.css`, `script.js`, `favicon.svg`, `portfolio/index.html`, `README.md` and `SECURITY.md`.
+1. Keep only the published files in the GitHub Pages branch: `index.html`, `styles.css`, `script.js`, `favicon.svg`, `portfolio/index.html`, `README.md`, `SECURITY.md` and `tests/security_check.py`.
 2. Keep GitHub Pages set to **Deploy from a branch → main / root**.
 3. Protect the `main` branch and require reviewed changes before merging.
 4. Enable two-factor authentication on the GitHub account.
@@ -84,10 +84,21 @@ These items cannot be fully configured on GitHub Pages hosted at `github.io` wit
 ## Maintenance
 
 - Review this file after any change to HTML, CSS, JavaScript, hosting or external resources.
+- Run `python tests/security_check.py` after each change; it must exit with code 0.
 - Periodically confirm HTTP → HTTPS redirection and HSTS with `curl -I`.
 - Check the browser console for CSP violations after deployments.
 - Review GitHub security features: Dependabot alerts, secret scanning and branch protection.
 - Report security issues privately to the email address published on the site.
+
+## Automated verification
+
+A dependency-free check is included at `tests/security_check.py`. Run it from the repository root:
+
+```powershell
+python tests/security_check.py
+```
+
+It checks both HTML entry points for the required CSP directives, the `no-referrer` policy, `noopener noreferrer` on every external link, the six preserved project cards and code links, and the absence of dangerous DOM patterns and common secret patterns in the deployed source files. Exit code 0 means every check passed.
 
 ## Classification
 
