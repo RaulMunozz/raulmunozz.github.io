@@ -92,8 +92,14 @@ for path in HTML_FILES:
         f"{label}: six GitHub code links preserved",
     )
 
+    cv_href = "../CV.pdf" if label == "portfolio/index.html" else "CV.pdf"
+    check(f'href="{cv_href}"' in text, f"{label}: CV download link present")
+    check('id="about"' in text, f"{label}: about section present")
+
     for pattern in DANGEROUS_PATTERNS:
         check(not re.search(pattern, text, re.I), f"{label}: no {pattern}")
+
+check((ROOT / "CV.pdf").is_file(), "CV.pdf: downloadable CV is present")
 
 js = JS_FILE.read_text(encoding="utf-8")
 check("textContent" in js, "script.js: writes the year with textContent")
