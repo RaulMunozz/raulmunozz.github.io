@@ -3,82 +3,137 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Projects by Raúl Muñoz López.">
+  <meta name="description" content="Selected projects by Raúl Muñoz López, computer science student.">
   <title>Raúl Muñoz López — Projects</title>
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="header">
+  <header class="site-header">
     <div class="wrap header-inner">
-      <strong>Raúl Muñoz López</strong>
-      <nav aria-label="Main navigation">
+      <a class="brand" href="#top" aria-label="Back to top">
+        <span class="brand-mark">RM</span>
+        <span class="brand-name">Raúl Muñoz López</span>
+      </a>
+      <nav class="site-nav" aria-label="Main navigation">
         <a href="#projects">Projects</a>
-        <a href="mailto:munozzraul30@gmail.com">Email</a>
+        <a href="#contact">Contact</a>
         <a href="https://github.com/RaulMunozz" target="_blank" rel="noopener">GitHub</a>
       </nav>
     </div>
   </header>
 
-  <main class="wrap">
-    <section class="intro">
-      <h1>Projects</h1>
-      <p>Computer science student. These are the projects I have worked on.</p>
+  <main id="top">
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-dot"></span> Computer Science · Data Analytics</p>
+        <h1 id="hero-title">Building things<br>that work <em>well.</em></h1>
+        <p class="lede">Computer science student at Alma College. I like turning ideas into clean, useful software — from games and web apps to data analysis.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projects">View projects <span aria-hidden="true">↓</span></a>
+          <a class="btn btn-ghost" href="mailto:munozzraul30@gmail.com">Get in touch</a>
+        </div>
+        <ul class="hero-meta" aria-label="Quick information">
+          <li><span>Based in</span><strong>Spain</strong></li>
+          <li><a href="https://github.com/RaulMunozz" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a></li>
+          <li><a href="mailto:munozzraul30@gmail.com">Email <span aria-hidden="true">↗</span></a></li>
+        </ul>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="orb orb-back"></div>
+        <div class="orb orb-front"></div>
+        <div class="hero-badge">
+          <span class="hero-badge-number">06</span>
+          <span class="hero-badge-label">selected<br>projects</span>
+        </div>
+        <div class="hero-code">{ &nbsp;build &nbsp;· &nbsp;learn &nbsp;· &nbsp;repeat&nbsp; }</div>
+      </div>
     </section>
 
-    <section id="projects" class="projects">
-      <article class="card">
-        <div class="card-top"><h2>Asteroid Destroyer</h2><span>CSC-335 final project</span></div>
-        <p>3D game made with openFrameworks. It has spaceship controls, missiles, asteroid collisions, four camera views, textures and sound.</p>
-        <p class="tech"><span>C++</span><span>openFrameworks</span><span>CMake</span></p>
-        <p class="links"><a href="https://github.com/RaulMunozz/asteroid-destroyer" target="_blank" rel="noopener">Code on GitHub</a></p>
-      </article>
+    <section id="projects" class="projects-section wrap" aria-labelledby="projects-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Selected work</p>
+          <h2 id="projects-title">Projects</h2>
+        </div>
+        <p class="section-count">01 <span>—</span> 06</p>
+      </div>
 
-      <article class="card">
-        <div class="card-top"><h2>Autoescuela</h2><span>2025</span></div>
-        <p>Flask app for collecting driving school students' availability and reviewing it as an admin. Data is stored in SQLite and the app is deployed on Render.</p>
-        <p class="tech"><span>Python</span><span>Flask</span><span>SQLAlchemy</span><span>SQLite</span></p>
-        <p class="links"><a href="https://github.com/RaulMunozz/autoescuela-demo" target="_blank" rel="noopener">Code on GitHub</a></p>
-      </article>
+      <div class="projects">
+        <article class="card">
+          <div class="card-head"><span class="card-index">01</span><span class="card-tag">CSC-335</span></div>
+          <h3>Asteroid Destroyer</h3>
+          <p>3D game made with openFrameworks. It has spaceship controls, missiles, asteroid collisions, four camera views, textures and sound.</p>
+          <ul class="tech"><li>C++</li><li>openFrameworks</li><li>CMake</li></ul>
+          <a class="card-link" href="https://github.com/RaulMunozz/asteroid-destroyer" target="_blank" rel="noopener">View code <span aria-hidden="true">↗</span></a>
+        </article>
 
-      <article class="card">
-        <div class="card-top"><h2>Ray Tracer</h2><span>CSC-335</span></div>
-        <p>Ray tracer in C++ with spheres, materials and textures. It renders an animated scene to image frames, which are then converted to video with ffmpeg.</p>
-        <p class="tech"><span>C++</span><span>CMake</span><span>ffmpeg</span></p>
-        <p class="note">Based on Peter Shirley's <em>Ray Tracing in One Weekend</em>. The animation and scene changes are mine.</p>
-        <p class="links"><a href="https://github.com/RaulMunozz/ray-tracer-cpp" target="_blank" rel="noopener">Code on GitHub</a></p>
-      </article>
+        <article class="card">
+          <div class="card-head"><span class="card-index">02</span><span class="card-tag">2025</span></div>
+          <h3>Autoescuela</h3>
+          <p>Flask app for collecting driving school students' availability and reviewing it as an admin. Data is stored in SQLite and the app is deployed on Render.</p>
+          <ul class="tech"><li>Python</li><li>Flask</li><li>SQLAlchemy</li><li>SQLite</li></ul>
+          <a class="card-link" href="https://github.com/RaulMunozz/autoescuela-demo" target="_blank" rel="noopener">View code <span aria-hidden="true">↗</span></a>
+        </article>
 
-      <article class="card">
-        <div class="card-top"><h2>Booking System</h2><span>2025</span></div>
-        <p>Flask app for making reservations with form validation, 15-minute time slots and an admin page listing all bookings. Deployed on Render.</p>
-        <p class="tech"><span>Python</span><span>Flask</span><span>SQLite</span><span>Bootstrap</span></p>
-        <p class="links"><a href="https://github.com/RaulMunozz/flask-reservas" target="_blank" rel="noopener">Code on GitHub</a></p>
-      </article>
+        <article class="card">
+          <div class="card-head"><span class="card-index">03</span><span class="card-tag">CSC-335</span></div>
+          <h3>Ray Tracer</h3>
+          <p>Ray tracer in C++ with spheres, materials and textures. It renders an animated scene to image frames, which are then converted to video with ffmpeg.</p>
+          <ul class="tech"><li>C++</li><li>CMake</li><li>ffmpeg</li></ul>
+          <p class="note">Based on Peter Shirley's <em>Ray Tracing in One Weekend</em>. The animation and scene changes are mine.</p>
+          <a class="card-link" href="https://github.com/RaulMunozz/ray-tracer-cpp" target="_blank" rel="noopener">View code <span aria-hidden="true">↗</span></a>
+        </article>
 
-      <article class="card">
-        <div class="card-top"><h2>Student Performance Analysis</h2><span>DAT 115</span></div>
-        <p>R scripts for the DAT 115 final project: regression, decision trees and k-means clustering on student performance data.</p>
-        <p class="tech"><span>R</span><span>ggplot2</span><span>C5.0</span></p>
-        <p class="links"><a href="https://github.com/RaulMunozz/student-performance-analysis" target="_blank" rel="noopener">Code on GitHub</a></p>
-      </article>
+        <article class="card">
+          <div class="card-head"><span class="card-index">04</span><span class="card-tag">2025</span></div>
+          <h3>Booking System</h3>
+          <p>Flask app for making reservations with form validation, 15-minute time slots and an admin page listing all bookings. Deployed on Render.</p>
+          <ul class="tech"><li>Python</li><li>Flask</li><li>SQLite</li><li>Bootstrap</li></ul>
+          <a class="card-link" href="https://github.com/RaulMunozz/flask-reservas" target="_blank" rel="noopener">View code <span aria-hidden="true">↗</span></a>
+        </article>
 
-      <article class="card">
-        <div class="card-top"><h2>Employee Task Manager</h2><span>2025</span></div>
-        <p>Spring Boot command-line app for managing employees and tasks, using JPA, an H2 database and separate service and repository layers.</p>
-        <p class="tech"><span>Java</span><span>Spring Boot</span><span>JPA</span><span>H2</span></p>
-        <p class="links"><a href="https://github.com/RaulMunozz/employee-task-manager" target="_blank" rel="noopener">Code on GitHub</a></p>
-      </article>
+        <article class="card">
+          <div class="card-head"><span class="card-index">05</span><span class="card-tag">DAT 115</span></div>
+          <h3>Student Performance Analysis</h3>
+          <p>R scripts for the DAT 115 final project: regression, decision trees and k-means clustering on student performance data.</p>
+          <ul class="tech"><li>R</li><li>ggplot2</li><li>C5.0</li></ul>
+          <a class="card-link" href="https://github.com/RaulMunozz/student-performance-analysis" target="_blank" rel="noopener">View code <span aria-hidden="true">↗</span></a>
+        </article>
+
+        <article class="card">
+          <div class="card-head"><span class="card-index">06</span><span class="card-tag">2025</span></div>
+          <h3>Employee Task Manager</h3>
+          <p>Spring Boot command-line app for managing employees and tasks, using JPA, an H2 database and separate service and repository layers.</p>
+          <ul class="tech"><li>Java</li><li>Spring Boot</li><li>JPA</li><li>H2</li></ul>
+          <a class="card-link" href="https://github.com/RaulMunozz/employee-task-manager" target="_blank" rel="noopener">View code <span aria-hidden="true">↗</span></a>
+        </article>
+      </div>
     </section>
 
-    <section class="contact" id="contact">
-      <h2>Contact</h2>
-      <p><a href="mailto:munozzraul30@gmail.com">munozzraul30@gmail.com</a> · <a href="https://github.com/RaulMunozz" target="_blank" rel="noopener">github.com/RaulMunozz</a></p>
+    <section id="contact" class="contact-section wrap" aria-labelledby="contact-title">
+      <div class="contact-card">
+        <div class="contact-copy">
+          <p class="eyebrow eyebrow-light">Contact</p>
+          <h2 id="contact-title">Let's build<br>something together.</h2>
+          <p>Open to junior technology roles in Spain and Europe.</p>
+        </div>
+        <div class="contact-actions">
+          <a class="btn btn-light" href="mailto:munozzraul30@gmail.com">munozzraul30@gmail.com</a>
+          <a class="btn btn-outline-light" href="https://github.com/RaulMunozz" target="_blank" rel="noopener">github.com/RaulMunozz <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="wrap">© <span id="year">2026</span> Raúl Muñoz López</div>
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <span>© <span id="year">2026</span> Raúl Muñoz López</span>
+      <span>Built with HTML &amp; CSS</span>
+    </div>
   </footer>
 
   <script src="script.js"></script>
