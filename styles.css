@@ -441,20 +441,29 @@ a:hover { text-decoration: none; }
   font-style: italic;
 }
 
-.card-link {
+.card-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 20px;
+  margin-top: auto;
+  padding-top: 14px;
+  border-top: 1px solid var(--line);
+}
+.card-link,
+.card-demo {
   display: inline-flex;
   align-items: center;
   gap: 8px;
   width: fit-content;
-  margin-top: auto;
-  padding-top: 14px;
-  border-top: 1px solid var(--line);
   color: var(--teal);
   font-size: 0.88rem;
   font-weight: 700;
 }
-.card-link span { transition: transform 0.2s ease; }
-.card-link:hover span { transform: translate(3px, -3px); }
+.card-demo { color: var(--teal-dark); }
+.card-link span,
+.card-demo span { transition: transform 0.2s ease; }
+.card-link:hover span,
+.card-demo:hover span { transform: translate(3px, -3px); }
 
 /* Contact */
 
